@@ -1,10 +1,8 @@
-"""Health check endpoint."""
-
 from fastapi import APIRouter
 
 router = APIRouter()
 
 
-@router.get("/health")
-async def health_check() -> dict:
-    return {"status": "ok", "service": "dclaw-translate"}
+@router.get("/")
+async def health_check():
+    return {"status": "ok"}
