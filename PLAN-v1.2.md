@@ -1,5 +1,8 @@
 # DClaw Translate — v1.2 Feature Roadmap
 
+> 📘 **REVISED PRD v2.3 available:** See `REVISED-PRD.md` for complete gap analysis, current state, and full feature roadmap.
+
+
 > Based on: Y Combinator vertical SaaS principles, trending GitHub repos (argos-translate, libretranslate), AI product research (DeepL, Smartcat, Phrase, Unbabel)
 
 ## Pre-Flight Checklist
