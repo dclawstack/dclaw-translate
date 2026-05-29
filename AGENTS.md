@@ -7,8 +7,8 @@
 
 **DClaw Translate** is a vertical SaaS application built on the DClaw Stack.
 
-- **Backend Port:** `8016` (FastAPI)
-- **Frontend Port:** `3016` (Next.js)
+- **Backend Port:** `8104` (FastAPI)
+- **Frontend Port:** `3018` (Next.js)
 - **Database:** `dclaw_translate` (PostgreSQL)
 - **Base API Path:** `/api/v1`
 
@@ -35,7 +35,7 @@ These are non-negotiable. If an agent suggests changing them, reject it.
 
 ### Docker
 - **Backend:** `python:3.11-slim`, non-root `appuser`, healthcheck with `python urllib.request.urlopen()`
-- **Frontend:** `node:20-alpine`, port `3016`
+- **Frontend:** `node:20-alpine`, port `3018`
 - **Compose:** container port MUST match `EXPOSE`/`ENV PORT`
 
 ## Directory Structure
@@ -178,6 +178,7 @@ Available components:
 | dclaw-marketing | 8102 | 3015 | dclaw_marketing |
 | dclaw-real-estate | 8103 | 3016 | dclaw_real_estate |
 | dclaw-sales | 8104 | 3017 | dclaw_sales |
+| dclaw-translate | 8104 | 3018 | dclaw_translate |
 | dclaw-recruit | 8105 | 3018 | dclaw_recruit |
 | dclaw-vendor | 8106 | 3019 | dclaw_vendor |
 | dclaw-doc | 8107 | 3020 | dclaw_doc |

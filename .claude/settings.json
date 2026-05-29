@@ -1,0 +1,24 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install:*)",
+      "Bash(docker compose:*)",
+      "Bash(python3 -m pytest backend/tests/ -v --tb=short)",
+      "Bash(pg_isready -U postgres -h localhost -p 5432)",
+      "Bash(psql -U postgres -h localhost -c \"SELECT 1\")",
+      "Bash(docker exec:*)",
+      "Bash(DATABASE_URL=\"postgresql+asyncpg://postgres:changethis123@localhost:5432/dclaw_app_test\" python3 -m pytest backend/tests/ -v --tb=short)",
+      "Bash(npm run:*)",
+      "Bash(pip install:*)",
+      "Bash(DATABASE_URL=\"postgresql+asyncpg://postgres:changethis123@localhost:5432/dclaw_app\" alembic revision --autogenerate -m \"add glossary and translation memory tables\")",
+      "Bash(DATABASE_URL=\"postgresql+asyncpg://postgres:changethis123@localhost:5432/dclaw_translate\" alembic revision --autogenerate -m \"add translations table\")",
+      "Bash(alembic upgrade:*)",
+      "Bash(DATABASE_URL=\"postgresql+asyncpg://postgres:changethis123@localhost:5432/dclaw_app_test\" python3 -m pytest tests/test_documents.py -v --tb=short)",
+      "Bash(DATABASE_URL=\"postgresql+asyncpg://postgres:changethis123@localhost:5432/dclaw_app_test\" python -m pytest tests/test_glossary.py tests/test_translation_memory.py -v --tb=short)",
+      "Bash(DATABASE_URL=\"postgresql+asyncpg://postgres:changethis123@localhost:5432/dclaw_app_test\" python3 -m pytest tests/test_qa.py -v --tb=short)",
+      "Bash(PGPASSWORD=changethis123 psql -h localhost -U postgres -d dclaw_translate -c \"\\\\dt\")",
+      "Bash(DATABASE_URL=\"postgresql+asyncpg://postgres:changethis123@localhost:5432/dclaw_app_test\" python3 -m pytest tests/test_dashboard.py -v --tb=short)",
+      "Bash(DATABASE_URL=\"postgresql+asyncpg://postgres:changethis123@localhost:5432/dclaw_app_test\" python3 -m pytest -v --tb=short)"
+    ]
+  }
+}
