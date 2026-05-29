@@ -63,6 +63,6 @@ jobs:
       - name: Build
         working-directory: ./frontend
         env:
-          NEXT_PUBLIC_API_URL: http://localhost:8000
+          NEXT_PUBLIC_API_URL: http://localhost:8104
         run: npm run build
         timeout-minutes: 5

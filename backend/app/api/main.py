@@ -28,6 +28,24 @@ app.add_middleware(
 )
 
 app.include_router(health.router, prefix="/health", tags=["health"])
-# TODO: Wire v1 routers here after creating them
-# from app.api.v1 import some_router
-# app.include_router(some_router.router, prefix="/api/v1/some", tags=["some"])
+
+from app.api.v1 import providers  # noqa: E402
+app.include_router(providers.router, prefix="/api/v1/providers", tags=["providers"])
+
+from app.api.v1 import translations  # noqa: E402
+app.include_router(translations.router, prefix="/api/v1/translations", tags=["translations"])
+
+from app.api.v1 import glossary  # noqa: E402
+app.include_router(glossary.router, prefix="/api/v1/glossary", tags=["glossary"])
+
+from app.api.v1 import memory  # noqa: E402
+app.include_router(memory.router, prefix="/api/v1/memory", tags=["memory"])
+
+from app.api.v1 import qa  # noqa: E402
+app.include_router(qa.router, prefix="/api/v1/qa", tags=["qa"])
+
+from app.api.v1 import documents  # noqa: E402
+app.include_router(documents.router, prefix="/api/v1/documents", tags=["documents"])
+
+from app.api.v1 import dashboard  # noqa: E402
+app.include_router(dashboard.router, prefix="/api/v1/dashboard", tags=["dashboard"])

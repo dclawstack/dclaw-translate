@@ -10,6 +10,8 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
+        "brand-cyan": "#0891B2",
+        "brand-emerald": "#10B981",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",

@@ -1,0 +1,10 @@
+{
+  "id": "translate",
+  "name": "DClaw Translate",
+  "category": "Language",
+  "tagline": "AI-powered translation platform",
+  "color": "#0891B2",
+  "icon": "languages",
+  "port": 3018,
+  "health": "/health/"
+}
